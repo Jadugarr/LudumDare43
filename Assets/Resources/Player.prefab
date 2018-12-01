@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 61289957528173698}
   m_Layer: 10
   m_Name: hitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 95078407921678682}
   m_Layer: 9
   m_Name: sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4135475845763930}
   m_Layer: 9
   m_Name: camera_hotspot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 114827560503571850}
   m_Layer: 9
   m_Name: terrain_collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +267,10 @@ MonoBehaviour:
   - {fileID: 95078407921678682}
   jumpButton: Jump
   runButton: Fire1
+  bunnyPrefab: {fileID: 1121118925704286, guid: dc6497ef42dba7f469c9229e68357435,
+    type: 2}
+  _bunnySpawnForce: 1000
+  _bunnySpawnKnockback: 700
   acceleration: 0.9
   deceleration: 0.8
   airborneDeceleration: 0.2

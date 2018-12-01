@@ -11,12 +11,24 @@ namespace Audio
         private EventManager _eventManager = EventManager.Instance;
         private AudioSource _audioSource;
 
+        private AudioController _audioController;
+
         private void Start()
         {
-            _eventManager.RegisterForEvent(EventTypes.BunnyStuck, OnBunnyStuck);
-            _eventManager.RegisterForEvent(EventTypes.BunnySpawned, OnBunnySpawned);
-            _eventManager.RegisterForEvent(EventTypes.PlayerJumped, OnPlayerJumped);
-            _audioSource = GetComponent<AudioSource>();
+            if (_audioController == null)
+            {
+                _audioController = this;
+                DontDestroyOnLoad(this);
+                
+                _eventManager.RegisterForEvent(EventTypes.BunnyStuck, OnBunnyStuck);
+                _eventManager.RegisterForEvent(EventTypes.BunnySpawned, OnBunnySpawned);
+                _eventManager.RegisterForEvent(EventTypes.PlayerJumped, OnPlayerJumped);
+                _audioSource = GetComponent<AudioSource>();
+            }
+            else
+            {
+                Destroy(this);
+            }
         }
 
         private void OnDestroy()
