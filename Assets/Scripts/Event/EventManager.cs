@@ -7,7 +7,8 @@ public enum EventTypes
 	BunnyStuck,
 	BunnySpawned,
 	PlayerJumped,
-	BunniesLeftChanged
+	BunniesLeftChanged,
+	BunnyAmountIncreased
 }
 
 /// <summary>

@@ -44,6 +44,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     [SerializeField] private int _bunnySpawnForce;
     [SerializeField] private int _bunnySpawnKnockback;
     [SerializeField] private GameObject _gameOverArea;
+    [SerializeField] private ParticleSystem _bunnyReceivedParticleSystem;
 
     [Header("Walk & Run")]
     [Tooltip("How fast the player accelerates when moving left or right.")]
@@ -110,6 +111,13 @@ public class PlayerPlatformerController2D : MonoBehaviour
 
         SetAnimatorsBool(FACE_RIGHT_ANIM_PARAM, isFacingRight);
         SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
+        
+        _eventManager.RegisterForEvent(EventTypes.BunnyAmountIncreased, OnBunnyAmountIncreased);
+    }
+
+    private void OnDestroy()
+    {
+        _eventManager.RemoveFromEvent(EventTypes.BunnyAmountIncreased, OnBunnyAmountIncreased);
     }
 
 
@@ -443,5 +451,11 @@ public class PlayerPlatformerController2D : MonoBehaviour
             StaticConstants.AcceptPlayerInput = false;
             _gameOverArea.SetActive(true);
         }
+    }
+
+    private void OnBunnyAmountIncreased(IEvent evt)
+    {
+        // Turn on particles
+        _bunnyReceivedParticleSystem.Play();
     }
 }

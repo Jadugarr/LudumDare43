@@ -24,6 +24,12 @@ namespace DefaultNamespace
             _eventManager.FireEvent(EventTypes.BunniesLeftChanged, null);
         }
 
+        public static void IncreaseBunniesByValue(int increaseValue)
+        {
+            SetBunniesLeft(_bunniesLeft + increaseValue);
+            _eventManager.FireEvent(EventTypes.BunnyAmountIncreased, null);
+        }
+
         public static int GetBunniesLeft()
         {
             return _bunniesLeft;

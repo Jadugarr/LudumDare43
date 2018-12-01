@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class ShagMe : MonoBehaviour
@@ -44,6 +45,7 @@ public class ShagMe : MonoBehaviour
     public void finishShag()
     {
         player.gameObject.SetActive(true);
+        LevelDefinitionBehaviour.IncreaseBunniesByValue(LevelDefinitionBehaviour.BunnyReplenishmentRate);
         if (shagPartnerAnimator.transform.localScale.x == -1)
         {
             // TODO player must face left
