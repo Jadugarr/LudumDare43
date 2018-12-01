@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mashedBunny: {fileID: 21300002, guid: 47adc335e87c2784ba4c2b65a482f129, type: 3}
+  decal: {fileID: 1243842431764658, guid: 686dfa562dd6f2b42a08397c5aa4f084, type: 2}
 --- !u!212 &212419971617111130
 SpriteRenderer:
   m_ObjectHideFlags: 1
