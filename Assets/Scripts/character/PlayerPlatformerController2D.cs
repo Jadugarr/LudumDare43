@@ -43,6 +43,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
 
     [SerializeField] private int _bunnySpawnForce;
     [SerializeField] private int _bunnySpawnKnockback;
+    [SerializeField] private GameObject _gameOverArea;
 
     [Header("Walk & Run")]
     [Tooltip("How fast the player accelerates when moving left or right.")]
@@ -438,7 +439,9 @@ public class PlayerPlatformerController2D : MonoBehaviour
     {
         if (other.gameObject.tag == "Deathplane")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+//            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StaticConstants.AcceptPlayerInput = false;
+            _gameOverArea.SetActive(true);
         }
     }
 }

@@ -269,8 +269,9 @@ MonoBehaviour:
   runButton: Fire1
   bunnyPrefab: {fileID: 1121118925704286, guid: dc6497ef42dba7f469c9229e68357435,
     type: 2}
-  _bunnySpawnForce: 2
-  _bunnySpawnKnockback: 2
+  _bunnySpawnForce: 20
+  _bunnySpawnKnockback: 20
+  _gameOverArea: {fileID: 0}
   acceleration: 0.9
   deceleration: 0.8
   airborneDeceleration: 0.2

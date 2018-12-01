@@ -276,6 +276,7 @@
           <e p="Level" t="Include">
             <e p="BunniesLeftBehaviour.cs" t="Include" />
             <e p="EndLevelTriggerBehaviour.cs" t="Include" />
+            <e p="GameOverAreaBehaviour.cs" t="Include" />
             <e p="LevelDefinitionBehaviour.cs" t="Include" />
             <e p="LevelFinishedAreaBehaviour.cs" t="Include" />
           </e>
