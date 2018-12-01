@@ -27,7 +27,7 @@ namespace MainMenu
 
         private void OnGameButtonClicked()
         {
-            SceneManager.LoadScene("_templateLevel");
+            SceneManager.LoadScene("Level1");
         }
     }
 }
