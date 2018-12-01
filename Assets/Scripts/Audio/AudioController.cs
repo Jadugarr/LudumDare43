@@ -17,7 +17,7 @@ namespace Audio
 
         private void OnBunnyStuck(IEvent evt)
         {
-            AudioClip clipToPlay = bunnyStuckClips[Random.Range(0, bunnyStuckClips.Length - 1)];
+            AudioClip clipToPlay = bunnyStuckClips[Random.Range(0, bunnyStuckClips.Length)];
             _audioSource.clip = clipToPlay;
             _audioSource.Play();
         }
