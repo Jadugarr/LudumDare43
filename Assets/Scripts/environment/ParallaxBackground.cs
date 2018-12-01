@@ -7,14 +7,14 @@ public class ParallaxBackground : MonoBehaviour
     [SerializeField]
     private float xFactor = 1.0f;
 
-    [SerializeField]
-    private float yFactor = 1.0f;
+    //[SerializeField]
+    //private float yFactor = 1.0f;
 
     [SerializeField]
     private bool tiedToBottom = true;
 
 
-    private Camera camera;
+    private Camera attachedCamera;
     private SpriteRenderer background;
     private float maxY;
 
@@ -23,8 +23,8 @@ public class ParallaxBackground : MonoBehaviour
     void Start()
     {
         this.background = GetComponent<SpriteRenderer>();
-        this.camera = background.transform.parent.parent.gameObject.GetComponent<Camera>();
-        this.maxY = camera.transform.localPosition.y;
+        this.attachedCamera = background.transform.parent.parent.gameObject.GetComponent<Camera>();
+        this.maxY = attachedCamera.transform.localPosition.y;
 
         //camera.aspect
     }
@@ -32,7 +32,7 @@ public class ParallaxBackground : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 pos = background.transform.localPosition;
-        pos.x = background.size.x / 4f - (camera.transform.position.x * xFactor) % (background.size.x / 2f);
+        pos.x = background.size.x / 4f - (attachedCamera.transform.position.x * xFactor) % (background.size.x / 2f);
         //pos.y = -camera.transform.position.y * yFactor;
 
         if (tiedToBottom)
