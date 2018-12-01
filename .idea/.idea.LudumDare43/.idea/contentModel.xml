@@ -252,6 +252,7 @@
             <e p="AudioController.cs" t="Include" />
           </e>
           <e p="Bunnies" t="Include">
+            <e p="ShagMe.cs" t="Include" />
             <e p="SmallBunnyBehaviour.cs" t="Include" />
           </e>
           <e p="character" t="Include">
@@ -273,6 +274,7 @@
             <e p="IEvent.cs" t="Include" />
           </e>
           <e p="Level" t="Include">
+            <e p="BunniesLeftBehaviour.cs" t="Include" />
             <e p="EndLevelTriggerBehaviour.cs" t="Include" />
             <e p="LevelDefinitionBehaviour.cs" t="Include" />
             <e p="LevelFinishedAreaBehaviour.cs" t="Include" />

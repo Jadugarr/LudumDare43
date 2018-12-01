@@ -41,8 +41,8 @@ public class PlayerPlatformerController2D : MonoBehaviour
     
     [SerializeField] private GameObject bunnyPrefab;
 
-    [SerializeField, Range(500, 3000)] private int _bunnySpawnForce;
-    [SerializeField, Range(300, 1000)] private int _bunnySpawnKnockback;
+    [SerializeField] private int _bunnySpawnForce;
+    [SerializeField] private int _bunnySpawnKnockback;
 
     [Header("Walk & Run")]
     [Tooltip("How fast the player accelerates when moving left or right.")]
@@ -170,19 +170,19 @@ public class PlayerPlatformerController2D : MonoBehaviour
             isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
         }
         
-        if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.BunniesLeft > 0)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.GetBunniesLeft() > 0)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - this.transform.position).normalized;
             Vector3 newBunnyPos = new Vector3(this.transform.position.x + direction.x + (1f * direction.x),
                 this.transform.position.y + direction.y + (1f * direction.y), 0);
             GameObject newBunny = GameObject.Instantiate(bunnyPrefab, newBunnyPos, bunnyPrefab.transform.rotation);
-            newBunny.GetComponent<Rigidbody2D>().AddForce(direction * _bunnySpawnForce);
+            newBunny.GetComponent<Rigidbody2D>().velocity = direction * _bunnySpawnForce;
                 
-            this.GetComponent<Rigidbody2D>().AddForce(-direction * _bunnySpawnKnockback);
+            this.GetComponent<Rigidbody2D>().velocity = -direction * _bunnySpawnKnockback;
 
             _eventManager.FireEvent(EventTypes.BunnySpawned, null);
-            LevelDefinitionBehaviour.BunniesLeft--;
+            LevelDefinitionBehaviour.SetBunniesLeft(LevelDefinitionBehaviour.GetBunniesLeft() - 1);
         }
     }
 

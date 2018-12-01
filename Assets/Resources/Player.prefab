@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1155817600514796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.5, y: -1.26, z: 0}
+  m_LocalPosition: {x: -9.77, y: -5.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4845530466186290}
@@ -269,8 +269,8 @@ MonoBehaviour:
   runButton: Fire1
   bunnyPrefab: {fileID: 1121118925704286, guid: dc6497ef42dba7f469c9229e68357435,
     type: 2}
-  _bunnySpawnForce: 1000
-  _bunnySpawnKnockback: 700
+  _bunnySpawnForce: 2
+  _bunnySpawnKnockback: 2
   acceleration: 0.9
   deceleration: 0.8
   airborneDeceleration: 0.2
