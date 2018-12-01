@@ -276,6 +276,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7d271293ec067cc47acf59c29dccf48d, type: 3}
   - {fileID: 8300000, guid: b4b90e6e56f5c9f4dbdc8da84203f85e, type: 3}
   - {fileID: 8300000, guid: f1bdbfa4b560d6a4987f11347a6097b3, type: 3}
+  bunnySpawnedClips:
+  - {fileID: 8300000, guid: cd28e27d05a3b4e47abf64f810926e25, type: 3}
+  - {fileID: 8300000, guid: 0eec2e46c86ea7f49b23bc274f7cb039, type: 3}
+  - {fileID: 8300000, guid: 895b3bf932acb5e42b9f24ef1e1f57e1, type: 3}
+  - {fileID: 8300000, guid: 6cacf370ff9fb5b4eb2b30491babf368, type: 3}
+  - {fileID: 8300000, guid: b05e73d7d56266446ac15cab70a4f628, type: 3}
+  playerJumpedClip: {fileID: 8300000, guid: 1ff62212ecbd9b647a5ebecae03268cd, type: 3}
 --- !u!82 &717573950
 AudioSource:
   m_ObjectHideFlags: 0

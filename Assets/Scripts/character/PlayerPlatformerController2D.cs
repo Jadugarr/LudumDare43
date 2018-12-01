@@ -86,6 +86,8 @@ public class PlayerPlatformerController2D : MonoBehaviour
     private int currentWallJumpGracePeriod;
     private bool wasAirBorne;
     private bool isRunning;
+    
+    private EventManager _eventManager = EventManager.Instance;
 
 
     /// <summary>
@@ -288,6 +290,8 @@ public class PlayerPlatformerController2D : MonoBehaviour
     /// </summary>
     private void Jump()
     {
+        _eventManager.FireEvent(EventTypes.PlayerJumped, null);
+        
         if (isAirborne)
         {
             // wall jump

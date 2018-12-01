@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public enum EventTypes
 {
 	BunnyStuck,
+	BunnySpawned,
+	PlayerJumped
 }
 
 /// <summary>
