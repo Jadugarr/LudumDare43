@@ -250,6 +250,7 @@
         <e p="Scripts" t="Include">
           <e p="Bunnies" t="Include">
             <e p="BunnyController.cs" t="Include" />
+            <e p="SmallBunnyBehaviour.cs" t="Include" />
           </e>
           <e p="character" t="Include">
             <e p="PlayerPlatformerController2D.cs" t="Include" />
