@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 788cbd817deb72948aaff78c21aa5335
+guid: 81d5dbcbf66b37046bbb63d56ee436cf
 TextureImporter:
   fileIDToRecycleName:
-    21300000: protagonist_jump_0
-    21300002: protagonist_jump_1
-    21300004: protagonist_jump_2
+    21300000: Bunny_sitting_0
+    21300002: Bunny_sitting_1
+    21300004: Bunny_sitting_2
+    21300006: Bunny_sitting_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -45,7 +46,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -83,65 +84,96 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: protagonist_jump_0
+      name: Bunny_sitting_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.34375, y: 0}
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e9f361f43d13c2488578831c97a0fe4
+      spriteID: 4a9615062f680af4f8580232d48a73b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonist_jump_1
+      name: Bunny_sitting_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.34375, y: 0}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5917c2ab0a1932b49a08035abdd42cb1
+      spriteID: ed3ed9a235aee114a919b94ad6955827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonist_jump_2
+      name: Bunny_sitting_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.34375, y: 0}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8c723f868494e44afb87125c2d81f7
+      spriteID: c60a07b9f1b8b8c469dfd5aba45c60bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_sitting_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bef2b8df9350b44bc535096bad3548
       vertices: []
       indices: 
       edges: []
@@ -149,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 89bdffa0dfa56124b909d78e6ad4e198
+    spriteID: 63b682ec4ccadf2439599c4c849f6422
     vertices: []
     indices: 
     edges: []

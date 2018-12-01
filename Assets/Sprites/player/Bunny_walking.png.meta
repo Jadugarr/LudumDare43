@@ -1,19 +1,14 @@
 fileFormatVersion: 2
-guid: 3a7ad875bfc9dc847bdc04983aa7c960
+guid: c6694e6ccfd18374bb6db891d6f53cd8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Walking_left_0
-    21300002: Walking_left_1
-    21300004: Walking_left_2
-    21300006: Walking_left_3
-    21300008: Walking_left_4
-    21300010: Walking_left_5
-    21300012: Walking_left_6
-    21300014: Walking_left_7
-    21300016: Walking_left_8
-    21300018: Walking_left_9
-    21300020: Walking_left_10
-    21300022: Walking_left_11
+    21300000: Bunny_walking_0
+    21300002: Bunny_walking_1
+    21300004: Bunny_walking_2
+    21300006: Bunny_walking_3
+    21300008: Bunny_walking_4
+    21300010: Bunny_walking_5
+    21300012: Bunny_walking_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -54,7 +49,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -92,245 +87,156 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walking_left_0
+      name: Bunny_walking_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46375068d76bb5343b7aca4607b22377
+      spriteID: cbb9bd6c3738d6a4eaffa810dd50098c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walking_left_1
+      name: Bunny_walking_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d357629015996d4e998735ba61a5a53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_walking_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5d3039734690d46920333dbb0e52f0
+      spriteID: 7298643d4a5ff8742909ac0d9fab0390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walking_left_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 144
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05dd5c35dee1efd499df84905419f857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_3
+      name: Bunny_walking_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f4e8f4f46f6bc4aadee556172b668b
+      spriteID: 03ff9b6178b5116439a50ea2aa25e389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walking_left_4
+      name: Bunny_walking_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d910c2d096fcf8647a0a242b31bd3880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_walking_5
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaed7a6decdf5b84cbbf64d2497a40ae
+      spriteID: 8c704e3a50c4d274e86a0481a3df2343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walking_left_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d2905a890dc3b948ace3be252842c63
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a42a00fd96f6abc4a914e56f7fa6e87a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1af6a2d6c6924f48a42630df555c543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6616c46b5d5020044b37cbd6bad472a0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_9
+      name: Bunny_walking_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12dedf7d63abcee469ae8004453e3af5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c99c982beb8633d4a9f540ebeab4a160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walking_left_11
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 48
-      alignment: 9
-      pivot: {x: 0.625, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da78b1c564af4754f881fb416f6dbd3e
+      spriteID: d5e44212d0358104681f0e07365b5979
       vertices: []
       indices: 
       edges: []
@@ -338,7 +244,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eaba864f0196368499300d0b0e9252f1
+    spriteID: 7919df310a8f88443a1f3bd843208327
     vertices: []
     indices: 
     edges: []
