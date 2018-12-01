@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4723212167525188}
   - component: {fileID: 212213953683795922}
   - component: {fileID: 50583522515333494}
-  - component: {fileID: 61172313781510988}
+  - component: {fileID: 114978690327301030}
+  - component: {fileID: 114622152210764594}
+  - component: {fileID: 61569343399037392}
   m_Layer: 0
   m_Name: PlayerBunny
   m_TagString: Untagged
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1932293998311268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.37, y: -3.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61172313781510988
+--- !u!61 &61569343399037392
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,6 +89,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114622152210764594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932293998311268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479fc952b8534614d9354e2080f7a966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask: 0
+--- !u!114 &114978690327301030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932293998311268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24fb628e39208342bda88cdae9f6d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBody: {fileID: 50583522515333494}
+  sideColliders: {fileID: 114622152210764594}
+  playerAnimators: []
+  jumpButton: Fire2
+  runButton: Fire1
+  acceleration: 0.9
+  deceleration: 0.8
+  airborneDeceleration: 0.2
+  maxWalkSpeed: 9
+  maxRunSpeed: 16
+  jumpHeight: 12
+  jumpExtension: 16
+  gravityFactorJumpExtension: 0.1
+  airborneJumps: 0
+  airborneJumpFactor: 0.9
+  gravityFactorFastFall: 2
+  allowWallJumps: 0
+  wallJumpHeight: 8
+  wallJumpHorizontal: 12
 --- !u!212 &212213953683795922
 SpriteRenderer:
   m_ObjectHideFlags: 1
