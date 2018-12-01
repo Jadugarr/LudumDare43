@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Level
-  - SmallBunny
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -15,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Environment
+  - EnvironmentChecker
+  - Hitbox
   - 
   - 
   - 
@@ -42,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 150927615
+    locked: 0
+  - name: Character
+    uniqueID: 3824368539
+    locked: 0
+  - name: Foreground
+    uniqueID: 3028084385
     locked: 0
