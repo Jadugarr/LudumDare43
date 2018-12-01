@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ParticleSystemDestroyer : MonoBehaviour
 {
-    private ParticleSystem particleSystem;
+    private ParticleSystem particles;
 
     public void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        particles = GetComponent<ParticleSystem>();
     }
 
     public void Update()
     {
-        if (!particleSystem.IsAlive())
+        if (!particles.IsAlive())
             Destroy(gameObject);
     }
 }

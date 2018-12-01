@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Common;
 using UnityEngine;
 
 public class ShagMe : MonoBehaviour
 {
     [SerializeField]
-    private PlayerPlatformerController2D player;
-
-    [SerializeField]
     private Transform playerShagPosition;
 
+    [SerializeField]
+    private int babyCount = -1;
+
+    private PlayerPlatformerController2D player;
     private Animator shagPartnerAnimator;
 
     void Start()
@@ -19,12 +21,22 @@ public class ShagMe : MonoBehaviour
     }
 
 
-    void Update()
+    protected void OnTriggerEnter2D(Collider2D col)
     {
-        // TODO check if player is close enough
-        if (Input.GetButtonDown("Fire3"))
-            attemptShagging();
+        player = col.GetComponentInParent<PlayerPlatformerController2D>();
 
+        if (!shagPartnerAnimator.GetBool("isSleepy"))
+        {
+            TurnToPlayer();
+            attemptShagging();
+        }
+    }
+
+
+    protected void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.GetComponentInParent<PlayerPlatformerController2D>() == player)
+            player = null;
     }
 
 
@@ -33,26 +45,46 @@ public class ShagMe : MonoBehaviour
         shagPartnerAnimator.SetTrigger("startShag");
     }
 
+    private void TurnToPlayer()
+    {
+        if (player)
+        {
+            Vector3 partnerScale = shagPartnerAnimator.transform.parent.localScale;
+            partnerScale.x = (player.transform.position.x < shagPartnerAnimator.transform.position.x) ? -1 : 1;
+            shagPartnerAnimator.transform.parent.localScale = partnerScale;
+        }
+    }
+
 
     public void startShag()
     {
-        player.transform.position = playerShagPosition.position;
-        player.gameObject.SetActive(false);
+        if (player.isFacingRight != (player.transform.position.x < shagPartnerAnimator.transform.position.x))
+            player.Flip();
+
+        TurnToPlayer();
         shagPartnerAnimator.SetBool("isSleepy", true);
+        SetPlayerEnabled(false);
     }
 
 
     public void finishShag()
     {
-        player.gameObject.SetActive(true);
-        LevelDefinitionBehaviour.IncreaseBunniesByValue(LevelDefinitionBehaviour.BunnyReplenishmentRate);
-        if (shagPartnerAnimator.transform.localScale.x == -1)
-        {
-            // TODO player must face left
-        }
-        else
-        {
-            // TODO player must face right
-        }
+        SetPlayerEnabled(true);
+        LevelDefinitionBehaviour.IncreaseBunniesByValue(babyCount == -1 ? LevelDefinitionBehaviour.BunnyReplenishmentRate : babyCount);
+        player.Flip();
+    }
+
+
+    private void SetPlayerEnabled(bool state)
+    {
+        StaticConstants.AcceptPlayerInput = state;
+        player.transform.position = playerShagPosition.position;
+        player.GetComponentInChildren<SpriteRenderer>().enabled = state;
+
+    }
+
+    public void Snooze()
+    {
+        transform.parent.GetComponentInChildren<ParticleSystem>().Play();
     }
 }

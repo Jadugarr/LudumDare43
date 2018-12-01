@@ -36,6 +36,9 @@ namespace Bunnies
                     case "Deathplane":
                         Destroy(this);
                         break;
+                    default:
+                        isSticking = false;
+                        break;
                 }
             }
         }

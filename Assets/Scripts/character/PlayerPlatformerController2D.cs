@@ -38,7 +38,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     [SerializeField]
     [Tooltip("The name of the run-button, set up in Project Settings > Input.")]
     private string runButton = "Fire1";
-    
+
     [SerializeField] private GameObject bunnyPrefab;
 
     [SerializeField] private int _bunnySpawnForce;
@@ -96,7 +96,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     private int currentWallJumpGracePeriod;
     private bool wasAirBorne;
     private bool isRunning;
-    
+
     private EventManager _eventManager = EventManager.Instance;
 
 
@@ -111,7 +111,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
 
         SetAnimatorsBool(FACE_RIGHT_ANIM_PARAM, isFacingRight);
         SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
-        
+
         _eventManager.RegisterForEvent(EventTypes.BunnyAmountIncreased, OnBunnyAmountIncreased);
     }
 
@@ -178,7 +178,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
             // running
             isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
         }
-        
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.GetBunniesLeft() > 0)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -187,7 +187,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
                 this.transform.position.y + direction.y + (1f * direction.y), 0);
             GameObject newBunny = GameObject.Instantiate(bunnyPrefab, newBunnyPos, bunnyPrefab.transform.rotation);
             newBunny.GetComponent<Rigidbody2D>().velocity = direction * _bunnySpawnForce;
-                
+
             this.GetComponent<Rigidbody2D>().velocity = -direction * _bunnySpawnKnockback;
 
             _eventManager.FireEvent(EventTypes.BunnySpawned, null);
@@ -254,7 +254,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     /// <summary>
     /// Flips the player around by updating a boolean parameter in the Animators.
     /// </summary>
-    private void Flip()
+    public void Flip()
     {
         isFacingRight = !isFacingRight;
         SetAnimatorsBool(FACE_RIGHT_ANIM_PARAM, isFacingRight);
@@ -334,7 +334,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     private void Jump()
     {
         _eventManager.FireEvent(EventTypes.PlayerJumped, null);
-        
+
         if (isAirborne)
         {
             // wall jump
@@ -447,7 +447,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     {
         if (other.gameObject.tag == "Deathplane")
         {
-//            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             StaticConstants.AcceptPlayerInput = false;
             _gameOverArea.SetActive(true);
         }
