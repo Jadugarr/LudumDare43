@@ -19,6 +19,13 @@ namespace Audio
             _audioSource = GetComponent<AudioSource>();
         }
 
+        private void OnDestroy()
+        {
+            _eventManager.RemoveFromEvent(EventTypes.BunnyStuck, OnBunnyStuck);
+            _eventManager.RemoveFromEvent(EventTypes.BunnySpawned, OnBunnySpawned);
+            _eventManager.RemoveFromEvent(EventTypes.PlayerJumped, OnPlayerJumped);
+        }
+
         private void OnPlayerJumped(IEvent evt)
         {
             _audioSource.clip = playerJumpedClip;

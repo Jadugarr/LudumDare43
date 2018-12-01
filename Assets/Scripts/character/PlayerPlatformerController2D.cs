@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>  
 /// This class offers a script for controlling player movement of a 2D platformer game.
@@ -398,5 +399,13 @@ public class PlayerPlatformerController2D : MonoBehaviour
     {
         this.currentJumpExtension = jumpExtension;
         this.currentAirborneJumps = airborneJumps;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Deathplane")
+        {
+            SceneManager.LoadScene("Game");
+        }
     }
 }

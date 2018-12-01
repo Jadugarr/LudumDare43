@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c288830-3fb1-4829-8707-a635efd127c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +31,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1359" />
+          <entry key="cs" value="1412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1359" />
+          <entry key="C#" value="1412" />
         </counts>
       </usages-collector>
     </session>
@@ -61,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <marker date="1543644470326" expanded="true" signature="37:1081" ph="{...}" />
                 <marker date="1543644470326" expanded="true" signature="88:1079" ph="{...}" />
@@ -91,18 +90,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="288">
+              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
-                <marker date="1543643403039" expanded="true" signature="35:1390" ph="{...}" />
-                <marker date="1543643403039" expanded="true" signature="86:1388" ph="{...}" />
-                <marker date="1543643403039" expanded="true" signature="420:747" ph="{...}" />
-                <marker date="1543643403039" expanded="true" signature="796:900" ph="{...}" />
-                <marker date="1543643403039" expanded="true" signature="949:1144" ph="{...}" />
-                <marker date="1543643403039" expanded="true" signature="1191:1382" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="35:1692" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="86:1690" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="420:747" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="781:1049" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="1098:1202" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="1251:1446" ph="{...}" />
+                <marker date="1543644963239" expanded="true" signature="1493:1684" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -111,54 +111,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="285" selection-start-line="285" selection-end-line="285" />
+            <state relative-caret-position="275">
+              <caret line="390" column="5" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
               <folding>
-                <marker date="1543643346902" expanded="false" signature="6:78" ph="..." />
-                <marker date="1543643346902" expanded="true" signature="80:378" ph="/// This class offers a script for controlling player movement of a 2D platformer game. ... " />
-                <marker date="1543643346902" expanded="true" signature="436:13847" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="4370:4468" ph="/// Initializes the script, setting some animator parameters. ... " />
-                <marker date="1543643346902" expanded="true" signature="4485:4787" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="4794:5020" ph="/// Sets a boolean parameter of all Animators. ... " />
-                <marker date="1543643346902" expanded="true" signature="5084:5254" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="5153:5248" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="5261:5485" ph="/// Sets a float parameter of all Animators. ... " />
-                <marker date="1543643346902" expanded="true" signature="5551:5722" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="5620:5716" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="5729:5871" ph="/// Update that is called on each frame. ... " />
-                <marker date="1543643346902" expanded="true" signature="5899:6530" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="6537:6701" ph="/// Update that is called in a fixed interval. ... " />
-                <marker date="1543643346902" expanded="true" signature="6734:7459" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="7466:7585" ph="/// Flips the player around if it is steered to the opposite horizontal direction. ... " />
-                <marker date="1543643346902" expanded="true" signature="7621:7740" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="7747:7861" ph="/// Flips the player around by updating a boolean parameter in the Animators. ... " />
-                <marker date="1543643346902" expanded="true" signature="7885:8001" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="8007:8467" ph="/// Handles horizontal movement of the player: ... " />
-                <marker date="1543643346902" expanded="true" signature="8491:10604" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="9143:9474" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="9190:9464" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="9622:9743" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="9853:10139" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="10205:10473" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="10611:10733" ph="/// Depending on the conditions, either executes a regular-, wall-, or airborne jump. ... " />
-                <marker date="1543643346902" expanded="true" signature="10757:11216" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="10860:11170" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="11055:11111" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="11223:11338" ph="/// Moves the player upwards and forwards, which should be away from the wall. ... " />
-                <marker date="1543643346902" expanded="true" signature="11366:11652" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="11659:11725" ph="/// Moves the player upwards. ... " />
-                <marker date="1543643346902" expanded="true" signature="11756:11889" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="11896:11995" ph="/// Moves the player upwards, if airborne jumps are available. ... " />
-                <marker date="1543643346902" expanded="true" signature="12027:12320" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="12327:12590" ph="/// While jumping and 'currentJumpExtension' frames are not zero, ... " />
-                <marker date="1543643346902" expanded="true" signature="12620:12927" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="12694:12921" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="12934:13113" ph="/// Increases the player gravity, causing a faster fall. ... " />
-                <marker date="1543643346902" expanded="true" signature="13144:13296" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="13303:13413" ph="/// Restores the player gravity to the original value of the RigidBody2D. ... " />
-                <marker date="1543643346902" expanded="true" signature="13452:13518" ph="{...}" />
-                <marker date="1543643346902" expanded="true" signature="13525:13707" ph="/// This method is called when the player touches the ground. ... " />
-                <marker date="1543643346902" expanded="true" signature="13731:13845" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="6:113" ph="..." />
+                <marker date="1543644811030" expanded="true" signature="115:413" ph="/// This class offers a script for controlling player movement of a 2D platformer game. ... " />
+                <marker date="1543644811030" expanded="true" signature="471:14064" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="4405:4503" ph="/// Initializes the script, setting some animator parameters. ... " />
+                <marker date="1543644811030" expanded="true" signature="4520:4822" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="4829:5055" ph="/// Sets a boolean parameter of all Animators. ... " />
+                <marker date="1543644811030" expanded="true" signature="5119:5289" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="5188:5283" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="5296:5520" ph="/// Sets a float parameter of all Animators. ... " />
+                <marker date="1543644811030" expanded="true" signature="5586:5757" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="5655:5751" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="5764:5906" ph="/// Update that is called on each frame. ... " />
+                <marker date="1543644811030" expanded="true" signature="5934:6565" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="6572:6736" ph="/// Update that is called in a fixed interval. ... " />
+                <marker date="1543644811030" expanded="true" signature="6769:7494" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="7501:7620" ph="/// Flips the player around if it is steered to the opposite horizontal direction. ... " />
+                <marker date="1543644811030" expanded="true" signature="7656:7775" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="7782:7896" ph="/// Flips the player around by updating a boolean parameter in the Animators. ... " />
+                <marker date="1543644811030" expanded="true" signature="7920:8036" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="8042:8502" ph="/// Handles horizontal movement of the player: ... " />
+                <marker date="1543644811030" expanded="true" signature="8526:10639" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="9178:9509" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="9225:9499" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="9657:9778" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="9888:10174" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="10240:10508" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="10646:10768" ph="/// Depending on the conditions, either executes a regular-, wall-, or airborne jump. ... " />
+                <marker date="1543644811030" expanded="true" signature="10792:11251" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="10895:11205" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="11090:11146" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="11258:11373" ph="/// Moves the player upwards and forwards, which should be away from the wall. ... " />
+                <marker date="1543644811030" expanded="true" signature="11401:11687" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="11694:11760" ph="/// Moves the player upwards. ... " />
+                <marker date="1543644811030" expanded="true" signature="11791:11924" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="11931:12030" ph="/// Moves the player upwards, if airborne jumps are available. ... " />
+                <marker date="1543644811030" expanded="true" signature="12062:12355" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="12362:12625" ph="/// While jumping and 'currentJumpExtension' frames are not zero, ... " />
+                <marker date="1543644811030" expanded="true" signature="12655:12962" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="12729:12956" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="12969:13148" ph="/// Increases the player gravity, causing a faster fall. ... " />
+                <marker date="1543644811030" expanded="true" signature="13179:13331" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="13338:13448" ph="/// Restores the player gravity to the original value of the RigidBody2D. ... " />
+                <marker date="1543644811030" expanded="true" signature="13487:13553" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="13560:13742" ph="/// This method is called when the player touches the ground. ... " />
+                <marker date="1543644811030" expanded="true" signature="13766:13880" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="13936:14062" ph="{...}" />
+                <marker date="1543644811030" expanded="true" signature="13992:14056" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -207,6 +209,7 @@
     <findStrings>
       <find>jump</find>
       <find>Jump()</find>
+      <find>OnCOll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,9 +232,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEventArgs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
       </list>
     </option>
   </component>
@@ -449,84 +452,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1543644470326" expanded="true" signature="37:1081" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="88:1079" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="308:1073" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="368:1063" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="285" selection-start-line="285" selection-end-line="285" />
+        <state relative-caret-position="275">
+          <caret line="390" column="5" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
           <folding>
-            <marker date="1543643346902" expanded="false" signature="6:78" ph="..." />
-            <marker date="1543643346902" expanded="true" signature="80:378" ph="/// This class offers a script for controlling player movement of a 2D platformer game. ... " />
-            <marker date="1543643346902" expanded="true" signature="436:13847" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="4370:4468" ph="/// Initializes the script, setting some animator parameters. ... " />
-            <marker date="1543643346902" expanded="true" signature="4485:4787" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="4794:5020" ph="/// Sets a boolean parameter of all Animators. ... " />
-            <marker date="1543643346902" expanded="true" signature="5084:5254" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="5153:5248" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="5261:5485" ph="/// Sets a float parameter of all Animators. ... " />
-            <marker date="1543643346902" expanded="true" signature="5551:5722" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="5620:5716" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="5729:5871" ph="/// Update that is called on each frame. ... " />
-            <marker date="1543643346902" expanded="true" signature="5899:6530" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="6537:6701" ph="/// Update that is called in a fixed interval. ... " />
-            <marker date="1543643346902" expanded="true" signature="6734:7459" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="7466:7585" ph="/// Flips the player around if it is steered to the opposite horizontal direction. ... " />
-            <marker date="1543643346902" expanded="true" signature="7621:7740" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="7747:7861" ph="/// Flips the player around by updating a boolean parameter in the Animators. ... " />
-            <marker date="1543643346902" expanded="true" signature="7885:8001" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="8007:8467" ph="/// Handles horizontal movement of the player: ... " />
-            <marker date="1543643346902" expanded="true" signature="8491:10604" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="9143:9474" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="9190:9464" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="9622:9743" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="9853:10139" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="10205:10473" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="10611:10733" ph="/// Depending on the conditions, either executes a regular-, wall-, or airborne jump. ... " />
-            <marker date="1543643346902" expanded="true" signature="10757:11216" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="10860:11170" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="11055:11111" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="11223:11338" ph="/// Moves the player upwards and forwards, which should be away from the wall. ... " />
-            <marker date="1543643346902" expanded="true" signature="11366:11652" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="11659:11725" ph="/// Moves the player upwards. ... " />
-            <marker date="1543643346902" expanded="true" signature="11756:11889" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="11896:11995" ph="/// Moves the player upwards, if airborne jumps are available. ... " />
-            <marker date="1543643346902" expanded="true" signature="12027:12320" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="12327:12590" ph="/// While jumping and 'currentJumpExtension' frames are not zero, ... " />
-            <marker date="1543643346902" expanded="true" signature="12620:12927" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="12694:12921" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="12934:13113" ph="/// Increases the player gravity, causing a faster fall. ... " />
-            <marker date="1543643346902" expanded="true" signature="13144:13296" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="13303:13413" ph="/// Restores the player gravity to the original value of the RigidBody2D. ... " />
-            <marker date="1543643346902" expanded="true" signature="13452:13518" ph="{...}" />
-            <marker date="1543643346902" expanded="true" signature="13525:13707" ph="/// This method is called when the player touches the ground. ... " />
-            <marker date="1543643346902" expanded="true" signature="13731:13845" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="6:113" ph="..." />
+            <marker date="1543644811030" expanded="true" signature="115:413" ph="/// This class offers a script for controlling player movement of a 2D platformer game. ... " />
+            <marker date="1543644811030" expanded="true" signature="471:14064" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="4405:4503" ph="/// Initializes the script, setting some animator parameters. ... " />
+            <marker date="1543644811030" expanded="true" signature="4520:4822" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="4829:5055" ph="/// Sets a boolean parameter of all Animators. ... " />
+            <marker date="1543644811030" expanded="true" signature="5119:5289" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="5188:5283" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="5296:5520" ph="/// Sets a float parameter of all Animators. ... " />
+            <marker date="1543644811030" expanded="true" signature="5586:5757" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="5655:5751" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="5764:5906" ph="/// Update that is called on each frame. ... " />
+            <marker date="1543644811030" expanded="true" signature="5934:6565" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="6572:6736" ph="/// Update that is called in a fixed interval. ... " />
+            <marker date="1543644811030" expanded="true" signature="6769:7494" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="7501:7620" ph="/// Flips the player around if it is steered to the opposite horizontal direction. ... " />
+            <marker date="1543644811030" expanded="true" signature="7656:7775" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="7782:7896" ph="/// Flips the player around by updating a boolean parameter in the Animators. ... " />
+            <marker date="1543644811030" expanded="true" signature="7920:8036" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="8042:8502" ph="/// Handles horizontal movement of the player: ... " />
+            <marker date="1543644811030" expanded="true" signature="8526:10639" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="9178:9509" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="9225:9499" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="9657:9778" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="9888:10174" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="10240:10508" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="10646:10768" ph="/// Depending on the conditions, either executes a regular-, wall-, or airborne jump. ... " />
+            <marker date="1543644811030" expanded="true" signature="10792:11251" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="10895:11205" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="11090:11146" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="11258:11373" ph="/// Moves the player upwards and forwards, which should be away from the wall. ... " />
+            <marker date="1543644811030" expanded="true" signature="11401:11687" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="11694:11760" ph="/// Moves the player upwards. ... " />
+            <marker date="1543644811030" expanded="true" signature="11791:11924" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="11931:12030" ph="/// Moves the player upwards, if airborne jumps are available. ... " />
+            <marker date="1543644811030" expanded="true" signature="12062:12355" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="12362:12625" ph="/// While jumping and 'currentJumpExtension' frames are not zero, ... " />
+            <marker date="1543644811030" expanded="true" signature="12655:12962" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="12729:12956" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="12969:13148" ph="/// Increases the player gravity, causing a faster fall. ... " />
+            <marker date="1543644811030" expanded="true" signature="13179:13331" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="13338:13448" ph="/// Restores the player gravity to the original value of the RigidBody2D. ... " />
+            <marker date="1543644811030" expanded="true" signature="13487:13553" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="13560:13742" ph="/// This method is called when the player touches the ground. ... " />
+            <marker date="1543644811030" expanded="true" signature="13766:13880" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="13936:14062" ph="{...}" />
+            <marker date="1543644811030" expanded="true" signature="13992:14056" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="288">
+          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding>
-            <marker date="1543643403039" expanded="true" signature="35:1390" ph="{...}" />
-            <marker date="1543643403039" expanded="true" signature="86:1388" ph="{...}" />
-            <marker date="1543643403039" expanded="true" signature="420:747" ph="{...}" />
-            <marker date="1543643403039" expanded="true" signature="796:900" ph="{...}" />
-            <marker date="1543643403039" expanded="true" signature="949:1144" ph="{...}" />
-            <marker date="1543643403039" expanded="true" signature="1191:1382" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <marker date="1543644470326" expanded="true" signature="37:1081" ph="{...}" />
-            <marker date="1543644470326" expanded="true" signature="88:1079" ph="{...}" />
-            <marker date="1543644470326" expanded="true" signature="308:1073" ph="{...}" />
-            <marker date="1543644470326" expanded="true" signature="368:1063" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="35:1692" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="86:1690" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="420:747" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="781:1049" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="1098:1202" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="1251:1446" ph="{...}" />
+            <marker date="1543644963239" expanded="true" signature="1493:1684" ph="{...}" />
           </folding>
         </state>
       </provider>
