@@ -7,6 +7,8 @@ namespace Bunnies
         [SerializeField] private GameObject bunnyPrefab;
         [SerializeField] private GameObject playerBunny;
 
+        [SerializeField, Range(500, 3000)] private int _bunnySpawnForce = 1000;
+
         private EventManager _eventManager = EventManager.Instance;
 
         private void Update()
@@ -18,7 +20,7 @@ namespace Bunnies
                 Vector3 newBunnyPos = new Vector3(playerBunny.transform.position.x + direction.x + (1f * direction.x),
                     playerBunny.transform.position.y + direction.y + (1f * direction.y), 0);
                 GameObject newBunny = GameObject.Instantiate(bunnyPrefab, newBunnyPos, bunnyPrefab.transform.rotation);
-                newBunny.GetComponent<Rigidbody2D>().AddForce(direction * 1000f);
+                newBunny.GetComponent<Rigidbody2D>().AddForce(direction * _bunnySpawnForce);
 
                 _eventManager.FireEvent(EventTypes.BunnySpawned, null);
             }
