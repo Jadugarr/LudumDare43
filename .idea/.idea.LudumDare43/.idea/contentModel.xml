@@ -252,7 +252,6 @@
             <e p="AudioController.cs" t="Include" />
           </e>
           <e p="Bunnies" t="Include">
-            <e p="BunnyController.cs" t="Include" />
             <e p="SmallBunnyBehaviour.cs" t="Include" />
           </e>
           <e p="character" t="Include">
@@ -266,7 +265,6 @@
           <e p="Debug" t="Include">
             <e p="ExplosionSpawner.cs" t="Include" />
           </e>
-          <e p="EndLevelTriggerBehaviour.cs" t="Include" />
           <e p="environment" t="Include">
             <e p="CollisionLayer.cs" t="Include" />
           </e>
@@ -274,7 +272,11 @@
             <e p="EventManager.cs" t="Include" />
             <e p="IEvent.cs" t="Include" />
           </e>
-          <e p="LevelFinishedAreaBehaviour.cs" t="Include" />
+          <e p="Level" t="Include">
+            <e p="EndLevelTriggerBehaviour.cs" t="Include" />
+            <e p="LevelDefinitionBehaviour.cs" t="Include" />
+            <e p="LevelFinishedAreaBehaviour.cs" t="Include" />
+          </e>
           <e p="MainMenu" t="Include">
             <e p="MainMenuBehaviour.cs" t="Include" />
           </e>

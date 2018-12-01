@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Common;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -169,7 +170,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
             isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
         }
         
-        if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.BunniesLeft > 0)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - this.transform.position).normalized;
@@ -181,6 +182,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
             this.GetComponent<Rigidbody2D>().AddForce(-direction * _bunnySpawnKnockback);
 
             _eventManager.FireEvent(EventTypes.BunnySpawned, null);
+            LevelDefinitionBehaviour.BunniesLeft--;
         }
     }
 
@@ -436,7 +438,7 @@ public class PlayerPlatformerController2D : MonoBehaviour
     {
         if (other.gameObject.tag == "Deathplane")
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
