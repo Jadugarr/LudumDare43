@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1155817600514796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.73, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4845530466186290}
@@ -265,7 +265,7 @@ MonoBehaviour:
   sideColliders: {fileID: 114827560503571850}
   playerAnimators:
   - {fileID: 95078407921678682}
-  jumpButton: Fire2
+  jumpButton: Jump
   runButton: Fire1
   acceleration: 0.9
   deceleration: 0.8

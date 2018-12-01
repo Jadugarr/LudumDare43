@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c288830-3fb1-4829-8707-a635efd127c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_crunch.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_crunch.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_fart1.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_fart1.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_fart2.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_fart2.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_fart3.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_fart3.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_fart4.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_fart4.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_fart5.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_fart5.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_jump.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_jump.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_splat1.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_splat1.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_splat2.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_splat2.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_splat3.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_splat3.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/bunny_splurch1.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/bunny_splurch1.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/spike_zing.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/spike_zing.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/squeak_short.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/squeak_short.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak1.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak1.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak2.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak2.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak3.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak3.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak4.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak4.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak5.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak5.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak6.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak6.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak7.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak7.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/toy_squeak8.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/toy_squeak8.ogg.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1339" />
+          <entry key="cs" value="1359" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1339" />
+          <entry key="C#" value="1359" />
         </counts>
       </usages-collector>
     </session>
@@ -84,16 +61,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="384">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
-                <marker date="1543643194553" expanded="true" signature="37:1057" ph="{...}" />
-                <marker date="1543643194553" expanded="true" signature="88:1055" ph="{...}" />
-                <marker date="1543643194553" expanded="true" signature="316:1049" ph="{...}" />
-                <marker date="1543643194553" expanded="true" signature="376:1039" ph="{...}" />
+                <marker date="1543644470326" expanded="true" signature="37:1081" ph="{...}" />
+                <marker date="1543644470326" expanded="true" signature="88:1079" ph="{...}" />
+                <marker date="1543644470326" expanded="true" signature="308:1073" ph="{...}" />
+                <marker date="1543644470326" expanded="true" signature="368:1063" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -114,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="304">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <marker date="1543643403039" expanded="true" signature="35:1390" ph="{...}" />
                 <marker date="1543643403039" expanded="true" signature="86:1388" ph="{...}" />
@@ -251,10 +228,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEventArgs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
       </list>
     </option>
   </component>
@@ -437,19 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <marker date="1543643194553" expanded="true" signature="37:1057" ph="{...}" />
-            <marker date="1543643194553" expanded="true" signature="88:1055" ph="{...}" />
-            <marker date="1543643194553" expanded="true" signature="316:1049" ph="{...}" />
-            <marker date="1543643194553" expanded="true" signature="376:1039" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -541,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="304">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
             <marker date="1543643403039" expanded="true" signature="35:1390" ph="{...}" />
             <marker date="1543643403039" expanded="true" signature="86:1388" ph="{...}" />
@@ -550,6 +514,19 @@
             <marker date="1543643403039" expanded="true" signature="796:900" ph="{...}" />
             <marker date="1543643403039" expanded="true" signature="949:1144" ph="{...}" />
             <marker date="1543643403039" expanded="true" signature="1191:1382" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1543644470326" expanded="true" signature="37:1081" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="88:1079" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="308:1073" ph="{...}" />
+            <marker date="1543644470326" expanded="true" signature="368:1063" ph="{...}" />
           </folding>
         </state>
       </provider>
