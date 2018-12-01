@@ -261,6 +261,7 @@
           <e p="Common" t="Include">
             <e p="GameController.cs" t="Include" />
             <e p="StaticConstants.cs" t="Include" />
+            <e p="TimelineBehaviour.cs" t="Include" />
           </e>
           <e p="Debug" t="Include">
             <e p="ExplosionSpawner.cs" t="Include" />

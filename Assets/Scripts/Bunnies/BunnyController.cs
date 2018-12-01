@@ -1,3 +1,4 @@
+using Common;
 using UnityEngine;
 
 namespace Bunnies
@@ -14,7 +15,7 @@ namespace Bunnies
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput)
             {
                 Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 direction = (mousePos - playerBunny.transform.position).normalized;

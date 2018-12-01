@@ -32,6 +32,7 @@ namespace Common
             {
                 _playableDirector.Play();
                 StaticConstants.PlayLevelIntro = false;
+                StaticConstants.AcceptPlayerInput = false;
             }
         }
     }

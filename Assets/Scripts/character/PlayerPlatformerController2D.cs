@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Common;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -149,16 +150,19 @@ public class PlayerPlatformerController2D : MonoBehaviour
         else if (currentWallJumpGracePeriod > 0)
             currentWallJumpGracePeriod--;
 
-        // jumping
-        if (Input.GetButtonDown(jumpButton))
-            Jump();
-        else if (Input.GetButton(jumpButton))
-            ExtendJump();
-        else if (Input.GetButtonUp(jumpButton))
-            RestoreGravityScale();
+        if (StaticConstants.AcceptPlayerInput)
+        {
+            // jumping
+            if (Input.GetButtonDown(jumpButton))
+                Jump();
+            else if (Input.GetButton(jumpButton))
+                ExtendJump();
+            else if (Input.GetButtonUp(jumpButton))
+                RestoreGravityScale();
 
-        // running
-        isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
+            // running
+            isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
+        }
     }
 
 
@@ -168,31 +172,34 @@ public class PlayerPlatformerController2D : MonoBehaviour
     /// </summary>
     protected void FixedUpdate()
     {
-        this.xAxis = Input.GetAxisRaw("Horizontal");
-        this.yAxis = Input.GetAxisRaw("Vertical");
+        if (StaticConstants.AcceptPlayerInput)
+        {
+            this.xAxis = Input.GetAxisRaw("Horizontal");
+            this.yAxis = Input.GetAxisRaw("Vertical");
 
-        // horizontal movement
-        SetLookDirection();
-        Walk();
+            // horizontal movement
+            SetLookDirection();
+            Walk();
 
-        Vector2 velocity = playerBody.velocity;
+            Vector2 velocity = playerBody.velocity;
 
-        // vertical movement
-        if (yAxis < 0f)
-            SpeedUpFall();
-        else if (velocity.y <= 0f)
-            RestoreGravityScale();
+            // vertical movement
+            if (yAxis < 0f)
+                SpeedUpFall();
+            else if (velocity.y <= 0f)
+                RestoreGravityScale();
 
-        // update animator
-        SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
-        SetAnimatorsFloat(VELOCITY_X_ANIM_PARAM, velocity.x);
-        SetAnimatorsFloat(VELOCITY_Y_ANIM_PARAM, velocity.y);
+            // update animator
+            SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
+            SetAnimatorsFloat(VELOCITY_X_ANIM_PARAM, velocity.x);
+            SetAnimatorsFloat(VELOCITY_Y_ANIM_PARAM, velocity.y);
 
-        // update landing
-        if (wasAirBorne && !isAirborne)
-            Land();
+            // update landing
+            if (wasAirBorne && !isAirborne)
+                Land();
 
-        wasAirBorne = isAirborne;
+            wasAirBorne = isAirborne;
+        }
     }
 
 
