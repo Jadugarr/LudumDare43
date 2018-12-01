@@ -176,30 +176,35 @@ public class PlayerPlatformerController2D : MonoBehaviour
         {
             this.xAxis = Input.GetAxisRaw("Horizontal");
             this.yAxis = Input.GetAxisRaw("Vertical");
-
-            // horizontal movement
-            SetLookDirection();
-            Walk();
-
-            Vector2 velocity = playerBody.velocity;
-
-            // vertical movement
-            if (yAxis < 0f)
-                SpeedUpFall();
-            else if (velocity.y <= 0f)
-                RestoreGravityScale();
-
-            // update animator
-            SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
-            SetAnimatorsFloat(VELOCITY_X_ANIM_PARAM, velocity.x);
-            SetAnimatorsFloat(VELOCITY_Y_ANIM_PARAM, velocity.y);
-
-            // update landing
-            if (wasAirBorne && !isAirborne)
-                Land();
-
-            wasAirBorne = isAirborne;
         }
+        else
+        {
+            this.xAxis = 0f;
+            this.yAxis = 0f;
+        }
+
+        // horizontal movement
+        SetLookDirection();
+        Walk();
+
+        Vector2 velocity = playerBody.velocity;
+
+        // vertical movement
+        if (yAxis < 0f)
+            SpeedUpFall();
+        else if (velocity.y <= 0f)
+            RestoreGravityScale();
+
+        // update animator
+        SetAnimatorsBool(AIRBORNE_ANIM_PARAM, isAirborne);
+        SetAnimatorsFloat(VELOCITY_X_ANIM_PARAM, velocity.x);
+        SetAnimatorsFloat(VELOCITY_Y_ANIM_PARAM, velocity.y);
+
+        // update landing
+        if (wasAirBorne && !isAirborne)
+            Land();
+
+        wasAirBorne = isAirborne;
     }
 
 

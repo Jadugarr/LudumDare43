@@ -266,6 +266,7 @@
           <e p="Debug" t="Include">
             <e p="ExplosionSpawner.cs" t="Include" />
           </e>
+          <e p="EndLevelTriggerBehaviour.cs" t="Include" />
           <e p="environment" t="Include">
             <e p="CollisionLayer.cs" t="Include" />
           </e>
@@ -273,6 +274,7 @@
             <e p="EventManager.cs" t="Include" />
             <e p="IEvent.cs" t="Include" />
           </e>
+          <e p="LevelFinishedAreaBehaviour.cs" t="Include" />
           <e p="MainMenu" t="Include">
             <e p="MainMenuBehaviour.cs" t="Include" />
           </e>
