@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c288830-3fb1-4829-8707-a635efd127c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare43/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare43/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SmallBunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SmallBunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare43/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare43/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="4" />
+          <entry key="cs" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="4" />
+          <entry key="C#" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="751" />
+          <entry key="cs" value="1064" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="751" />
+          <entry key="C#" value="1064" />
         </counts>
       </usages-collector>
     </session>
@@ -80,16 +81,68 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+            <state relative-caret-position="256">
+              <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
               <folding>
-                <marker date="1543638449740" expanded="true" signature="37:570" ph="{...}" />
-                <marker date="1543638449740" expanded="true" signature="92:568" ph="{...}" />
-                <marker date="1543638449740" expanded="true" signature="157:562" ph="{...}" />
-                <marker date="1543638449740" expanded="true" signature="445:552" ph="{...}" />
+                <marker date="1543642571223" expanded="true" signature="37:734" ph="{...}" />
+                <marker date="1543642571223" expanded="true" signature="92:732" ph="{...}" />
+                <marker date="1543642571223" expanded="true" signature="234:726" ph="{...}" />
+                <marker date="1543642571223" expanded="true" signature="522:716" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <marker date="1543642540807" expanded="true" signature="35:701" ph="{...}" />
+                <marker date="1543642540807" expanded="true" signature="86:699" ph="{...}" />
+                <marker date="1543642540807" expanded="true" signature="295:452" ph="{...}" />
+                <marker date="1543642540807" expanded="true" signature="499:693" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <marker date="1543642324694" expanded="false" signature="6:78" ph="..." />
+                <marker date="1543642324694" expanded="true" signature="102:119" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="121:178" ph="/// Singleton event manager. ... " />
+                <marker date="1543642324694" expanded="true" signature="204:2614" ph="{...}" />
+                <marker date="1543642324694" expanded="false" signature="208:294" ph="Delegates/Events" />
+                <marker date="1543642324694" expanded="false" signature="297:511" ph="Öffentliche Felder" />
+                <marker date="1543642324694" expanded="false" signature="514:748" ph="Eigenschaften" />
+                <marker date="1543642324694" expanded="true" signature="538:645" ph="/// Gets the instance of the EventManager. ... " />
+                <marker date="1543642324694" expanded="true" signature="682:735" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="691:732" ph="{...}" />
+                <marker date="1543642324694" expanded="false" signature="751:925" ph="Private Konstruktoren" />
+                <marker date="1543642324694" expanded="true" signature="784:886" ph="/// Initializes a new instance of the &lt;see cref=&quot;EventManager&quot;/&gt; class. ... " />
+                <marker date="1543642324694" expanded="false" signature="928:2612" ph="Öffentliche Methoden" />
+                <marker date="1543642324694" expanded="true" signature="959:1134" ph="/// Registers and EventHandler to a specific event. ... " />
+                <marker date="1543642324694" expanded="true" signature="1207:1514" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="1329:1368" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="1376:1511" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="1517:1768" ph="/// Removes the given method from the specified event. If there are no methods for the specified event, this meth ... " />
+                <marker date="1543642324694" expanded="true" signature="1840:2034" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="1962:2004" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="2012:2031" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="2037:2259" ph="/// Fires the given event. If there are no registered methods for this event, this method will do nothing. ... " />
+                <marker date="1543642324694" expanded="true" signature="2316:2599" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="2438:2569" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="2493:2565" ph="{...}" />
+                <marker date="1543642324694" expanded="true" signature="2577:2596" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,8 +154,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Event/IEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -110,6 +166,10 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs" />
       </list>
     </option>
@@ -148,7 +208,7 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Bunnies" type="1045f7f1:UnityExplorerNode" />
+              <item name="Event" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -207,7 +267,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -218,7 +278,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -262,6 +322,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Event/IEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1543633451601" expanded="true" signature="15:82" ph="/// Interface for the Event parameter. ... " />
+            <marker date="1543633451601" expanded="true" signature="106:111" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Event/BunnyStuckEventArgs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1543642324694" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543642324694" expanded="true" signature="102:119" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="121:178" ph="/// Singleton event manager. ... " />
+            <marker date="1543642324694" expanded="true" signature="204:2614" ph="{...}" />
+            <marker date="1543642324694" expanded="false" signature="208:294" ph="Delegates/Events" />
+            <marker date="1543642324694" expanded="false" signature="297:511" ph="Öffentliche Felder" />
+            <marker date="1543642324694" expanded="false" signature="514:748" ph="Eigenschaften" />
+            <marker date="1543642324694" expanded="true" signature="538:645" ph="/// Gets the instance of the EventManager. ... " />
+            <marker date="1543642324694" expanded="true" signature="682:735" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="691:732" ph="{...}" />
+            <marker date="1543642324694" expanded="false" signature="751:925" ph="Private Konstruktoren" />
+            <marker date="1543642324694" expanded="true" signature="784:886" ph="/// Initializes a new instance of the &lt;see cref=&quot;EventManager&quot;/&gt; class. ... " />
+            <marker date="1543642324694" expanded="false" signature="928:2612" ph="Öffentliche Methoden" />
+            <marker date="1543642324694" expanded="true" signature="959:1134" ph="/// Registers and EventHandler to a specific event. ... " />
+            <marker date="1543642324694" expanded="true" signature="1207:1514" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="1329:1368" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="1376:1511" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="1517:1768" ph="/// Removes the given method from the specified event. If there are no methods for the specified event, this meth ... " />
+            <marker date="1543642324694" expanded="true" signature="1840:2034" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="1962:2004" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="2012:2031" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="2037:2259" ph="/// Fires the given event. If there are no registered methods for this event, this method will do nothing. ... " />
+            <marker date="1543642324694" expanded="true" signature="2316:2599" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="2438:2569" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="2493:2565" ph="{...}" />
+            <marker date="1543642324694" expanded="true" signature="2577:2596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -277,13 +390,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/SmallBunnyBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+        <state relative-caret-position="256">
+          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding>
-            <marker date="1543638449740" expanded="true" signature="37:570" ph="{...}" />
-            <marker date="1543638449740" expanded="true" signature="92:568" ph="{...}" />
-            <marker date="1543638449740" expanded="true" signature="157:562" ph="{...}" />
-            <marker date="1543638449740" expanded="true" signature="445:552" ph="{...}" />
+            <marker date="1543642571223" expanded="true" signature="37:734" ph="{...}" />
+            <marker date="1543642571223" expanded="true" signature="92:732" ph="{...}" />
+            <marker date="1543642571223" expanded="true" signature="234:726" ph="{...}" />
+            <marker date="1543642571223" expanded="true" signature="522:716" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1543642540807" expanded="true" signature="35:701" ph="{...}" />
+            <marker date="1543642540807" expanded="true" signature="86:699" ph="{...}" />
+            <marker date="1543642540807" expanded="true" signature="295:452" ph="{...}" />
+            <marker date="1543642540807" expanded="true" signature="499:693" ph="{...}" />
           </folding>
         </state>
       </provider>

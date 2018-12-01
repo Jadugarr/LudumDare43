@@ -248,6 +248,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Audio" t="Include">
+            <e p="AudioController.cs" t="Include" />
+          </e>
           <e p="Bunnies" t="Include">
             <e p="BunnyController.cs" t="Include" />
             <e p="SmallBunnyBehaviour.cs" t="Include" />
