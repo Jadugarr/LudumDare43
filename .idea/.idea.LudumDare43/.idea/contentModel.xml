@@ -258,6 +258,10 @@
           <e p="character" t="Include">
             <e p="PlayerPlatformerController2D.cs" t="Include" />
           </e>
+          <e p="Common" t="Include">
+            <e p="GameController.cs" t="Include" />
+            <e p="StaticConstants.cs" t="Include" />
+          </e>
           <e p="Debug" t="Include">
             <e p="ExplosionSpawner.cs" t="Include" />
           </e>
