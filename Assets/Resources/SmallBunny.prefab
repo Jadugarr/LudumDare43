@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50572334706651596}
   - component: {fileID: 61450046966438120}
   - component: {fileID: 114140544955933998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmallBunny
   m_TagString: SmallBunny
   m_Icon: {fileID: 0}
