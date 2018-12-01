@@ -10,22 +10,33 @@ namespace Bunnies
         [SerializeField]
         private GameObject decal;
 
+        [SerializeField]
+        private GameObject bloodSpray;
+
+        private bool isSticking = false;
         private EventManager _eventManager = EventManager.Instance;
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            switch (other.gameObject.tag)
+            if (!isSticking)
             {
-                case "Level":
-                    Stick();
-                    GameObject decalObject = Instantiate(decal, this.transform);
-                    break;
-                case "SmallBunny":
-                    Stick();
-                    break;
-                case "Deathplane":
-                    Destroy(this);
-                    break;
+                isSticking = true;
+                switch (other.gameObject.tag)
+                {
+                    case "Level":
+                        Stick();
+                        bloodSpray.SetActive(true);
+                        decal.SetActive(true);
+                        break;
+                    case "SmallBunny":
+                        Stick();
+                        bloodSpray.SetActive(true);
+                        Destroy(decal);
+                        break;
+                    case "Deathplane":
+                        Destroy(this);
+                        break;
+                }
             }
         }
 
