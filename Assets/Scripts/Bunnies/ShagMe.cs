@@ -80,7 +80,10 @@ public class ShagMe : MonoBehaviour
     {
         StaticConstants.AcceptPlayerInput = state;
         player.transform.position = playerShagPosition.position;
-        player.GetComponentInChildren<SpriteRenderer>().enabled = state;
+
+        Color invisColor = Color.white;
+        invisColor.a = state ? 1f : 0f;
+        player.GetComponentInChildren<SpriteRenderer>().color = invisColor;
 
     }
 

@@ -466,7 +466,6 @@ public class PlayerPlatformerController2D : MonoBehaviour
     {
         if (other.gameObject.tag == "Deathplane")
         {
-            //            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             StaticConstants.AcceptPlayerInput = false;
             _gameOverArea.SetActive(true);
         }
