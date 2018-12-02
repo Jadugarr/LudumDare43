@@ -181,7 +181,6 @@ public class PlayerPlatformerController2D : MonoBehaviour
             // running
             isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
 
-
             bool pressedBirthButton = Input.GetButtonDown(birthButton);
             if ((pressedBirthButton || Input.GetKeyDown(KeyCode.Mouse0))
                 && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.GetBunniesLeft() > 0)
