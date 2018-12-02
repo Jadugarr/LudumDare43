@@ -319,6 +319,8 @@ MonoBehaviour:
   allowWallJumps: 1
   wallJumpHeight: 8
   wallJumpHorizontal: 12
+  bloodSpray: {fileID: 198523826013161592, guid: ae2ad3bb4c9b027468ed5704616e36e7,
+    type: 2}
 --- !u!114 &114827560503571850
 MonoBehaviour:
   m_ObjectHideFlags: 1

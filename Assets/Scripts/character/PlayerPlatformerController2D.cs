@@ -85,6 +85,10 @@ public class PlayerPlatformerController2D : MonoBehaviour
     [Tooltip("The number of frames after turning away from the wall, during which the wall jump can be executed.")]
     private int wallJumpGracePeriod = 8;
 
+
+    [SerializeField]
+    private ParticleSystem bloodSpray;
+
     public bool isTouchingLeftWall { get { return sideColliders.isTouchingLeft; } }
     public bool isTouchingRightWall { get { return sideColliders.isTouchingRight; } }
     public bool isTouchingCeiling { get { return sideColliders.isTouchingTop; } }
@@ -466,11 +470,23 @@ public class PlayerPlatformerController2D : MonoBehaviour
             StaticConstants.AcceptPlayerInput = false;
             _gameOverArea.SetActive(true);
         }
+        else if (other.gameObject.tag == "Spikes")
+        {
+            StaticConstants.AcceptPlayerInput = false;
+            SetAnimatorsBool("isDead", true);
+            _gameOverArea.SetActive(true);
+            SprayBlood();
+        }
     }
 
     private void OnBunnyAmountIncreased(IEvent evt)
     {
         // Turn on particles
         _bunnyReceivedParticleSystem.Play();
+    }
+
+    private void SprayBlood()
+    {
+        Instantiate(bloodSpray, this.transform);
     }
 }
