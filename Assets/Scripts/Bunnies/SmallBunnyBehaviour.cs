@@ -10,8 +10,6 @@ namespace Bunnies
 
         [SerializeField] private GameObject bloodSpray;
 
-        [SerializeField] private GameObject environmentChecker;
-
         [SerializeField] private float rotationSpeed;
 
         private bool isSticking = false;
@@ -22,7 +20,6 @@ namespace Bunnies
         {
             if (!isSticking)
             {
-                
                 switch (other.gameObject.tag)
                 {
                     case "Level":
@@ -31,7 +28,7 @@ namespace Bunnies
                         bloodSpray.SetActive(true);
                         decal.SetActive(true);
                         ContactPoint2D contact = other.GetContact(0);
-                        var quatHit = Quaternion.FromToRotation(Vector3.up , contact.normal);
+                        var quatHit = Quaternion.FromToRotation(Vector3.up, contact.normal);
                         var quatForward = Quaternion.FromToRotation(Vector3.forward, other.transform.forward);
                         var quatC = quatHit * quatForward;
                         transform.rotation = quatC;
@@ -56,10 +53,9 @@ namespace Bunnies
 
         private void Stick()
         {
-            Destroy(environmentChecker);
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<SpriteRenderer>().sprite = mashedBunny;
-            gameObject.layer = 8;
+            gameObject.layer = (int)CollisionLayer.Environment;
             _eventManager.FireEvent(EventTypes.BunnyStuck, null);
             shouldRotate = false;
         }
