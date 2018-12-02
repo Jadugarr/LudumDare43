@@ -22,23 +22,23 @@ namespace Bunnies
             {
                 switch (other.gameObject.tag)
                 {
+                    case "Spikes":
+                        isSticking = true;
+                        Stick(other);
+                        bloodSpray.SetActive(true);
+                        break;
                     case "Level":
                         isSticking = true;
-                        Stick();
+                        Stick(other);
                         bloodSpray.SetActive(true);
                         decal.SetActive(true);
-                        ContactPoint2D contact = other.GetContact(0);
-                        var quatHit = Quaternion.FromToRotation(Vector3.up, contact.normal);
-                        var quatForward = Quaternion.FromToRotation(Vector3.forward, other.transform.forward);
-                        var quatC = quatHit * quatForward;
-                        transform.rotation = quatC;
                         break;
                     case "SmallBunny":
                         SmallBunnyBehaviour otherBunny = other.gameObject.GetComponent<SmallBunnyBehaviour>();
                         if (otherBunny && otherBunny.isSticking)
                         {
                             isSticking = true;
-                            Stick();
+                            Stick(other);
                             bloodSpray.SetActive(true);
                             Destroy(decal);
                         }
@@ -51,8 +51,14 @@ namespace Bunnies
             }
         }
 
-        private void Stick()
+        private void Stick(Collision2D other)
         {
+            ContactPoint2D contact = other.GetContact(0);
+            var quatHit = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            var quatForward = Quaternion.FromToRotation(Vector3.forward, other.transform.forward);
+            var quatC = quatHit * quatForward;
+            transform.rotation = quatC;
+
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<SpriteRenderer>().sprite = mashedBunny;
             gameObject.layer = 8;
