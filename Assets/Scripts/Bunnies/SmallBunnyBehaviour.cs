@@ -55,7 +55,7 @@ namespace Bunnies
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<SpriteRenderer>().sprite = mashedBunny;
-            gameObject.layer = (int)CollisionLayer.Environment;
+            gameObject.layer = 8;
             _eventManager.FireEvent(EventTypes.BunnyStuck, null);
             shouldRotate = false;
         }
