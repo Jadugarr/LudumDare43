@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4573192522846876}
   - component: {fileID: 50776301601836612}
   - component: {fileID: 114645545974160724}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4845530466186290}
   - component: {fileID: 212673378379553730}
   - component: {fileID: 95078407921678682}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4059924125319044}
   - component: {fileID: 198780529103849432}
   - component: {fileID: 199455023001125184}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: BunnyReceivedParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4135475845763930}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: camera_hotspot
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -298,10 +298,11 @@ MonoBehaviour:
   - {fileID: 95078407921678682}
   jumpButton: Jump
   runButton: Fire1
+  birthButton: Fire3
   bunnyPrefab: {fileID: 1121118925704286, guid: dc6497ef42dba7f469c9229e68357435,
     type: 2}
-  _bunnySpawnForce: 20
-  _bunnySpawnKnockback: 20
+  _bunnySpawnForce: 13
+  _bunnySpawnKnockback: 13
   _gameOverArea: {fileID: 0}
   _bunnyReceivedParticleSystem: {fileID: 198780529103849432}
   acceleration: 0.9

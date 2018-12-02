@@ -39,6 +39,9 @@ public class PlayerPlatformerController2D : MonoBehaviour
     [Tooltip("The name of the run-button, set up in Project Settings > Input.")]
     private string runButton = "Fire1";
 
+    [SerializeField]
+    private string birthButton = "Fire3";
+
     [SerializeField] private GameObject bunnyPrefab;
 
     [SerializeField] private int _bunnySpawnForce;
@@ -177,21 +180,33 @@ public class PlayerPlatformerController2D : MonoBehaviour
 
             // running
             isRunning = maxRunSpeed != 0 && Input.GetButton(runButton);
-        }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.GetBunniesLeft() > 0)
-        {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 direction = (mousePos - this.transform.position).normalized;
-            Vector3 newBunnyPos = new Vector3(this.transform.position.x + direction.x + (1f * direction.x),
-                this.transform.position.y + direction.y + (1f * direction.y), 0);
-            GameObject newBunny = GameObject.Instantiate(bunnyPrefab, newBunnyPos, bunnyPrefab.transform.rotation);
-            newBunny.GetComponent<Rigidbody2D>().velocity = direction * _bunnySpawnForce;
 
-            this.GetComponent<Rigidbody2D>().velocity = -direction * _bunnySpawnKnockback;
+            bool pressedBirthButton = Input.GetButtonDown(birthButton);
+            if ((pressedBirthButton || Input.GetKeyDown(KeyCode.Mouse0))
+                && StaticConstants.AcceptPlayerInput && LevelDefinitionBehaviour.GetBunniesLeft() > 0)
+            {
+                Vector2 direction;
+                if (pressedBirthButton)
+                    direction = new Vector2(-Input.GetAxisRaw("Horizontal"), -Input.GetAxisRaw("Vertical"));
+                else
+                {
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    direction = (mousePos - this.transform.position);
+                }
+                direction.Normalize();
+                Debug.Log(direction.magnitude);
 
-            _eventManager.FireEvent(EventTypes.BunnySpawned, null);
-            LevelDefinitionBehaviour.SetBunniesLeft(LevelDefinitionBehaviour.GetBunniesLeft() - 1);
+                Vector3 newBunnyPos = new Vector3(this.transform.position.x + direction.x + (1f * direction.x),
+                    this.transform.position.y + direction.y + (1f * direction.y), 0);
+                GameObject newBunny = GameObject.Instantiate(bunnyPrefab, newBunnyPos, bunnyPrefab.transform.rotation);
+                newBunny.GetComponent<Rigidbody2D>().velocity = direction * _bunnySpawnForce;
+
+                this.GetComponent<Rigidbody2D>().velocity = -direction * _bunnySpawnKnockback;
+
+                _eventManager.FireEvent(EventTypes.BunnySpawned, null);
+                LevelDefinitionBehaviour.SetBunniesLeft(LevelDefinitionBehaviour.GetBunniesLeft() - 1);
+            }
         }
     }
 

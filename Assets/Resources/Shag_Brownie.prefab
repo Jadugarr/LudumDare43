@@ -38,7 +38,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4397721236221224}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: playerPoAfterhag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4366787486078246}
   - component: {fileID: 198820236448557182}
   - component: {fileID: 199695347037670198}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: zzz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1606393126561368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.16, y: -1.46, z: 0}
+  m_LocalPosition: {x: -6.8983884, y: -1.4889606, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4207426698720924}

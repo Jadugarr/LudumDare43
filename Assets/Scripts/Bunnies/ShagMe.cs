@@ -24,8 +24,7 @@ public class ShagMe : MonoBehaviour
     protected void OnTriggerEnter2D(Collider2D col)
     {
         player = col.GetComponentInParent<PlayerPlatformerController2D>();
-
-        if (!shagPartnerAnimator.GetBool("isSleepy"))
+        if (player && !shagPartnerAnimator.GetBool("isSleepy"))
         {
             TurnToPlayer();
             attemptShagging();
