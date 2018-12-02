@@ -31,7 +31,7 @@ namespace DefaultNamespace
 
         private void RefreshBunniesLeftText()
         {
-            _bunniesLeftText.text = "Bunnies Left: " + LevelDefinitionBehaviour.GetBunniesLeft();
+            _bunniesLeftText.text = "x " + LevelDefinitionBehaviour.GetBunniesLeft();
         }
     }
 }
