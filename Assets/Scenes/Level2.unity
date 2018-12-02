@@ -36585,7 +36585,7 @@ Prefab:
         type: 2}
       propertyPath: LevelFinishedArea
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1754273930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38eb819fabcb6b4f89916789643747a, type: 2}
   m_IsPrefabAsset: 0
