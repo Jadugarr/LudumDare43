@@ -195,7 +195,6 @@ public class PlayerPlatformerController2D : MonoBehaviour
                     direction = (mousePos - this.transform.position);
                 }
                 direction.Normalize();
-                Debug.Log(direction.magnitude);
 
                 Vector3 newBunnyPos = new Vector3(this.transform.position.x + direction.x + (1f * direction.x),
                     this.transform.position.y + direction.y + (1f * direction.y), 0);
