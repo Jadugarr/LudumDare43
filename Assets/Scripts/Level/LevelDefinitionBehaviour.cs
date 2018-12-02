@@ -18,6 +18,11 @@ namespace DefaultNamespace
             BunnyReplenishmentRate = ReplenishmentRate;
         }
 
+        private void Awake()
+        {
+            SetBunniesLeft(StartingBunnies);
+        }
+
         public static void SetBunniesLeft(int bunniesLeft)
         {
             _bunniesLeft = bunniesLeft;

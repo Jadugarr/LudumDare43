@@ -247,11 +247,20 @@
             </e>
           </e>
         </e>
+        <e p="Fonts" t="Include">
+          <e p="pix-pixelfjverdana12pt" t="Include">
+            <e p="1001fonts-pix-pixelfjverdana12pt-eula.txt" t="Include" />
+          </e>
+          <e p="senor-saturno" t="Include">
+            <e p="license.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Audio" t="Include">
             <e p="AudioController.cs" t="Include" />
           </e>
           <e p="Bunnies" t="Include">
+            <e p="BabyShower.cs" t="Include" />
             <e p="ShagMe.cs" t="Include" />
             <e p="SmallBunnyBehaviour.cs" t="Include" />
           </e>
@@ -260,6 +269,7 @@
           </e>
           <e p="Common" t="Include">
             <e p="GameController.cs" t="Include" />
+            <e p="ParticleSystemDestroyer.cs" t="Include" />
             <e p="StaticConstants.cs" t="Include" />
             <e p="TimelineBehaviour.cs" t="Include" />
           </e>
@@ -268,6 +278,7 @@
           </e>
           <e p="environment" t="Include">
             <e p="CollisionLayer.cs" t="Include" />
+            <e p="ParallaxBackground.cs" t="Include" />
           </e>
           <e p="Event" t="Include">
             <e p="EventManager.cs" t="Include" />
