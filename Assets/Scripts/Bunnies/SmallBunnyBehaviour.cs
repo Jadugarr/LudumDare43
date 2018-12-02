@@ -30,7 +30,11 @@ namespace Bunnies
                         Stick();
                         bloodSpray.SetActive(true);
                         decal.SetActive(true);
-                        
+                        ContactPoint2D contact = other.GetContact(0);
+                        var quatHit = Quaternion.FromToRotation(Vector3.up , contact.normal);
+                        var quatForward = Quaternion.FromToRotation(Vector3.forward, other.transform.forward);
+                        var quatC = quatHit * quatForward;
+                        transform.rotation = quatC;
                         break;
                     case "SmallBunny":
                         SmallBunnyBehaviour otherBunny = other.gameObject.GetComponent<SmallBunnyBehaviour>();
