@@ -4,25 +4,25 @@ namespace Bunnies
 {
     public class SmallBunnyBehaviour : MonoBehaviour
     {
-        [SerializeField]
-        private Sprite mashedBunny;
+        [SerializeField] private Sprite mashedBunny;
 
-        [SerializeField]
-        private GameObject decal;
+        [SerializeField] private GameObject decal;
 
-        [SerializeField]
-        private GameObject bloodSpray;
+        [SerializeField] private GameObject bloodSpray;
 
-        [SerializeField]
-        private GameObject environmentChecker;
+        [SerializeField] private GameObject environmentChecker;
+
+        [SerializeField] private float rotationSpeed;
 
         private bool isSticking = false;
         private EventManager _eventManager = EventManager.Instance;
+        private bool shouldRotate = true;
 
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!isSticking)
             {
+                
                 switch (other.gameObject.tag)
                 {
                     case "Level":
@@ -30,6 +30,7 @@ namespace Bunnies
                         Stick();
                         bloodSpray.SetActive(true);
                         decal.SetActive(true);
+                        
                         break;
                     case "SmallBunny":
                         SmallBunnyBehaviour otherBunny = other.gameObject.GetComponent<SmallBunnyBehaviour>();
@@ -40,6 +41,7 @@ namespace Bunnies
                             bloodSpray.SetActive(true);
                             Destroy(decal);
                         }
+
                         break;
                     case "Deathplane":
                         Destroy(this);
@@ -55,6 +57,15 @@ namespace Bunnies
             GetComponent<SpriteRenderer>().sprite = mashedBunny;
             gameObject.layer = 8;
             _eventManager.FireEvent(EventTypes.BunnyStuck, null);
+            shouldRotate = false;
+        }
+
+        private void Update()
+        {
+            if (shouldRotate)
+            {
+                gameObject.transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
+            }
         }
     }
 }
