@@ -14,6 +14,7 @@ public class ShagMe : MonoBehaviour
 
     private PlayerPlatformerController2D player;
     private Animator shagPartnerAnimator;
+    private bool isShagging = false;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class ShagMe : MonoBehaviour
 
     protected void OnTriggerExit2D(Collider2D col)
     {
-        if (col.GetComponentInParent<PlayerPlatformerController2D>() == player)
+        if (!isShagging && col.GetComponentInParent<PlayerPlatformerController2D>() == player)
             player = null;
     }
 
@@ -57,6 +58,7 @@ public class ShagMe : MonoBehaviour
 
     public void startShag()
     {
+        isShagging = true;
         if (player.isFacingRight != (player.transform.position.x < shagPartnerAnimator.transform.position.x))
             player.Flip();
 

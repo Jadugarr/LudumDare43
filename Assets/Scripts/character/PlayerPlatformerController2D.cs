@@ -193,6 +193,9 @@ public class PlayerPlatformerController2D : MonoBehaviour
                     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     direction = (mousePos - this.transform.position);
                 }
+                if (direction == Vector2.zero)
+                    direction.y = -1;
+
                 direction.Normalize();
 
                 Vector3 newBunnyPos = new Vector3(this.transform.position.x + direction.x + (1f * direction.x),
