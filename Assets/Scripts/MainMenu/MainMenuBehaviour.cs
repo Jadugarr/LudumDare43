@@ -37,7 +37,7 @@ namespace MainMenu
         private void OnGameButtonClicked()
         {
             StaticConstants.FunModeActive = false;
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Level1Intro");
         }
     }
 }

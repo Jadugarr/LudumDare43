@@ -36860,7 +36860,7 @@ MonoBehaviour:
   _nextLevelButton: {fileID: 255992186}
   _restartLevelButton: {fileID: 1029636721}
   _quitGameButton: {fileID: 897901223}
-  _nextLevelName: Level3
+  _nextLevelName: Level3Intro
 --- !u!1001 &1792759942
 Prefab:
   m_ObjectHideFlags: 0

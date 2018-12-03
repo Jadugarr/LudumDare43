@@ -3394,7 +3394,7 @@ MonoBehaviour:
   _nextLevelButton: {fileID: 255992186}
   _restartLevelButton: {fileID: 1029636721}
   _quitGameButton: {fileID: 897901223}
-  _nextLevelName: Level2
+  _nextLevelName: Level2Intro
 --- !u!1001 &1792759942
 Prefab:
   m_ObjectHideFlags: 0
@@ -40301,7 +40301,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Use the knockback of the projectiles!
+  m_text: Use the knockback of your babies!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2671f0e65e4c1481886bc2f50a6f088c, type: 2}
   m_sharedMaterial: {fileID: 21159125402414842, guid: 2671f0e65e4c1481886bc2f50a6f088c,
@@ -40370,7 +40370,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1967581020}
-    characterCount: 37
+    characterCount: 33
     spriteCount: 0
     spaceCount: 5
     wordCount: 6
