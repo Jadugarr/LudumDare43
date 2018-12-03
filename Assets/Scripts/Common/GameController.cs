@@ -35,5 +35,20 @@ namespace Common
                 StaticConstants.AcceptPlayerInput = false;
             }
         }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Scene currentScene = SceneManager.GetActiveScene();
+
+                if ((currentScene.name == "Level1" ||
+                    currentScene.name == "Level2" ||
+                    currentScene.name == "Level3") && StaticConstants.AcceptPlayerInput)
+                {
+                    SceneManager.LoadScene(currentScene.name);
+                }
+            }
+        }
     }
 }

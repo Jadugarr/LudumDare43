@@ -265,6 +265,7 @@
             <e p="SmallBunnyBehaviour.cs" t="Include" />
           </e>
           <e p="character" t="Include">
+            <e p="IntroBunny.cs" t="Include" />
             <e p="PlayerPlatformerController2D.cs" t="Include" />
           </e>
           <e p="Common" t="Include">
