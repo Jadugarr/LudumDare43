@@ -1,3 +1,4 @@
+using Common;
 using TMPro;
 using UnityEngine;
 
@@ -26,7 +27,14 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            RefreshBunniesLeftText();
+            if (StaticConstants.FunModeActive)
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                RefreshBunniesLeftText();
+            }
         }
 
         private void RefreshBunniesLeftText()

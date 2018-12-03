@@ -4,5 +4,6 @@ namespace Common
     {
         public static bool PlayLevelIntro = true;
         public static bool AcceptPlayerInput = true;
+        public static bool FunModeActive = false;
     }
 }
