@@ -35772,11 +35772,11 @@ Prefab:
       objectReference: {fileID: 23344272}
     - target: {fileID: 4762844873713558, guid: c41ea56fabcf0a944b7c22c56ef59f41, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.429615
+      value: -10.429597
       objectReference: {fileID: 0}
     - target: {fileID: 4762844873713558, guid: c41ea56fabcf0a944b7c22c56ef59f41, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.3770013
+      value: 5.3770027
       objectReference: {fileID: 0}
     - target: {fileID: 114841313474302188, guid: c41ea56fabcf0a944b7c22c56ef59f41,
         type: 2}
@@ -36584,7 +36584,7 @@ MonoBehaviour:
   _nextLevelButton: {fileID: 255992186}
   _restartLevelButton: {fileID: 1029636721}
   _quitGameButton: {fileID: 897901223}
-  _nextLevelName: Level23
+  _nextLevelName: Level3
 --- !u!1001 &1792759942
 Prefab:
   m_ObjectHideFlags: 0
