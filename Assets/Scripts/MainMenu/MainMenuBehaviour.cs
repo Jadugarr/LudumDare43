@@ -22,7 +22,7 @@ namespace MainMenu
         private void OnFunModeButtonClicked()
         {
             StaticConstants.FunModeActive = true;
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Level1Intro");
         }
 
         private void OnExitButtonClicked()
