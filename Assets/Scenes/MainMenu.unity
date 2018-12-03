@@ -4989,31 +4989,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 82515403354104902, guid: 201df9ad86c9975439d289f0e5b4ebf9,
-        type: 2}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82515403354104902, guid: 201df9ad86c9975439d289f0e5b4ebf9,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 82515403354104902, guid: 201df9ad86c9975439d289f0e5b4ebf9,
-        type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82515403354104902, guid: 201df9ad86c9975439d289f0e5b4ebf9,
-        type: 2}
-      propertyPath: BypassReverbZones
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82515403354104902, guid: 201df9ad86c9975439d289f0e5b4ebf9,
-        type: 2}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 201df9ad86c9975439d289f0e5b4ebf9, type: 2}
   m_IsPrefabAsset: 0
@@ -8525,6 +8500,34 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1525834423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1841913098}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525834424}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1525834424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1841913098}
+  m_GameObject: {fileID: 1525834423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616563882
 GameObject:
   m_ObjectHideFlags: 0

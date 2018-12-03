@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Audio
 {
@@ -7,6 +8,11 @@ namespace Audio
         [SerializeField] private AudioClip[] bunnyStuckClips;
         [SerializeField] private AudioClip[] bunnySpawnedClips;
         [SerializeField] private AudioClip playerJumpedClip;
+        [SerializeField] private AudioClip mainMenuMusic;
+        [SerializeField] private AudioClip levelMusic;
+        [SerializeField] private AudioSource musicSource;
+
+        private AudioClip currentBGMClip;
 
         private EventManager _eventManager = EventManager.Instance;
         private AudioSource _audioSource;
@@ -24,10 +30,36 @@ namespace Audio
                 _eventManager.RegisterForEvent(EventTypes.BunnySpawned, OnBunnySpawned);
                 _eventManager.RegisterForEvent(EventTypes.PlayerJumped, OnPlayerJumped);
                 _audioSource = GetComponent<AudioSource>();
+                SceneManager.sceneLoaded += OnSceneLoaded;
+
+                musicSource.clip = mainMenuMusic;
+                musicSource.Play();
             }
             else
             {
                 Destroy(this);
+            }
+        }
+
+        private void OnSceneLoaded(Scene loadedScene, LoadSceneMode loadMode)
+        {
+            if (loadedScene.name == "MainMenu")
+            {
+                if (currentBGMClip != mainMenuMusic)
+                {
+                    musicSource.clip = mainMenuMusic;
+                    currentBGMClip = mainMenuMusic;
+                    musicSource.Play();
+                }
+            }
+            else
+            {
+                if (currentBGMClip != levelMusic)
+                {
+                    musicSource.clip = levelMusic;
+                    currentBGMClip = levelMusic;
+                    musicSource.Play();
+                }
             }
         }
 

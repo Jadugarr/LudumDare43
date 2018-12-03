@@ -22,29 +22,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="38" />
+          <entry key="cs" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="38" />
+          <entry key="C#" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4907" />
+          <entry key="cs" value="5367" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4907" />
+          <entry key="C#" value="5367" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level/BunniesLeftBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="759">
@@ -60,6 +60,50 @@
                 <marker date="1543858664620" expanded="true" signature="761:834" ph="{...}" />
                 <marker date="1543858664620" expanded="true" signature="851:921" ph="{...}" />
                 <marker date="1543858664620" expanded="true" signature="978:1084" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+              <folding>
+                <marker date="1543861840552" expanded="true" signature="6:53" ph="..." />
+                <marker date="1543861840552" expanded="true" signature="70:3080" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="121:3078" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="720:1454" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="772:1368" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1385:1444" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1533:2135" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1591:1854" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1658:1840" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1871:2125" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="1935:2111" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="2169:2437" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="2486:2590" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="2639:2834" ph="{...}" />
+                <marker date="1543861840552" expanded="true" signature="2881:3072" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level/GameOverAreaBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <marker date="1543861969593" expanded="false" signature="6:89" ph="..." />
+                <marker date="1543861969593" expanded="true" signature="117:1120" ph="{...}" />
+                <marker date="1543861969593" expanded="true" signature="174:1118" ph="{...}" />
+                <marker date="1543861969593" expanded="true" signature="385:623" ph="{...}" />
+                <marker date="1543861969593" expanded="true" signature="665:733" ph="{...}" />
+                <marker date="1543861969593" expanded="true" signature="775:914" ph="{...}" />
+                <marker date="1543861969593" expanded="true" signature="966:1112" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -206,10 +250,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/TimelineBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelFinishedAreaBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelTriggerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelFinishedAreaBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/GameOverAreaBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Event/EventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bunnies/ShagMe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelDefinitionBehaviour.cs" />
@@ -218,6 +260,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/character/PlayerPlatformerController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/BunniesLeftBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/GameOverAreaBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -247,6 +291,12 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Audio" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -324,7 +374,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -392,25 +442,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bunnies/BunnyController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelFinishedAreaBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level/GameOverAreaBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -556,6 +592,46 @@
             <marker date="1543858664620" expanded="true" signature="761:834" ph="{...}" />
             <marker date="1543858664620" expanded="true" signature="851:921" ph="{...}" />
             <marker date="1543858664620" expanded="true" signature="978:1084" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <marker date="1543861840552" expanded="true" signature="6:53" ph="..." />
+            <marker date="1543861840552" expanded="true" signature="70:3080" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="121:3078" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="720:1454" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="772:1368" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1385:1444" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1533:2135" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1591:1854" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1658:1840" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1871:2125" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="1935:2111" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="2169:2437" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="2486:2590" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="2639:2834" ph="{...}" />
+            <marker date="1543861840552" expanded="true" signature="2881:3072" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level/GameOverAreaBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <marker date="1543861969593" expanded="false" signature="6:89" ph="..." />
+            <marker date="1543861969593" expanded="true" signature="117:1120" ph="{...}" />
+            <marker date="1543861969593" expanded="true" signature="174:1118" ph="{...}" />
+            <marker date="1543861969593" expanded="true" signature="385:623" ph="{...}" />
+            <marker date="1543861969593" expanded="true" signature="665:733" ph="{...}" />
+            <marker date="1543861969593" expanded="true" signature="775:914" ph="{...}" />
+            <marker date="1543861969593" expanded="true" signature="966:1112" ph="{...}" />
           </folding>
         </state>
       </provider>
